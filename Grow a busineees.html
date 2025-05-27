@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Structure</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: linear-gradient(-45deg, #fff3b0, #ffe066, #f9d423, #ffcc00);
+      background-size: 400% 400%;
+      animation: bgAnim 25s ease infinite;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    @keyframes bgAnim {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .rarity-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #444;
+    }
+
+    .structure-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    img {
+      max-width: 180px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    .table-block {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 250px;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .name-label {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5px;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <h1>What are structure?</h1>
+  <p>The structure are the main resource to make money,</p>
+  <p>There are different types of Structures and different rarities:</p>
+
+  <p class="rarity-title">Common:</p>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/m.png" alt="Noob Employee" />
+      <div class="name-label">Noob</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>30</td></tr>
+        <tr><th>Money</th><td>1$</td></tr>
+        <tr><th>Time</th><td>2 seconds</td></tr>
+        <tr><th>Money/sec</th><td>0.5$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/Bus.png" alt="Business Man" />
+      <div class="name-label">Business Man</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>200</td></tr>
+        <tr><th>Money</th><td>5$</td></tr>
+        <tr><th>Time</th><td>4 seconds</td></tr>
+        <tr><th>Money/sec</th><td>1.2$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/teacher.png" alt="Teacher" />
+      <div class="name-label">Teacher</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>500$</td></tr>
+        <tr><th>Money</th><td>10$</td></tr>
+        <tr><th>Time</th><td>5 seconds</td></tr>
+        <tr><th>Money/sec</th><td>2$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <p class="rarity-title">Rare:</p>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/Gardener.png" alt="Gardener" />
+      <div class="name-label">Gardener</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>1200$</td></tr>
+        <tr><th>Money</th><td>20$</td></tr>
+        <tr><th>Time</th><td>8 seconds</td></tr>
+        <tr><th>Money/sec</th><td>2.5$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/Painter.png" alt="Painter" />
+      <div class="name-label">Painter</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>3500$</td></tr>
+        <tr><th>Money</th><td>75$</td></tr>
+        <tr><th>Time</th><td>10 seconds</td></tr>
+        <tr><th>Money/sec</th><td>7.5$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/Chef.png" alt="Chef" />
+      <div class="name-label">Chef</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>8000$</td></tr>
+        <tr><th>Money</th><td>105$</td></tr>
+        <tr><th>Time</th><td>10 seconds</td></tr>
+        <tr><th>Money/sec</th><td>10.5$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/Mine.png" alt="Mine" />
+      <div class="name-label">Mine</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>15000$</td></tr>
+        <tr><th>Money</th><td>189$</td></tr>
+        <tr><th>Time</th><td>12 seconds</td></tr>
+        <tr><th>Money/sec</th><td>15.75$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/Fortune Magician.png" alt="Fortune Magician" />
+      <div class="name-label">Fortune Magician</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>45000$</td></tr>
+        <tr><th>Money</th><td>450$</td></tr>
+        <tr><th>Time</th><td>15 seconds</td></tr>
+        <tr><th>Money/sec</th><td>30$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/Bank.png" alt="Bank" />
+      <div class="name-label">Bank</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>200000$</td></tr>
+        <tr><th>Money</th><td>1500$</td></tr>
+        <tr><th>Time</th><td>20 seconds</td></tr>
+        <tr><th>Money/sec</th><td>75$</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="structure-block">
+    <div>
+      <img src="images/Skyscraper.png" alt="Skyscraper" />
+      <div class="name-label">Skyscraper</div>
+    </div>
+    <div class="table-block">
+      <table>
+        <tr><th>Price</th><td>750000$</td></tr>
+        <tr><th>Money</th><td>4500$</td></tr>
+        <tr><th>Time</th><td>35 seconds</td></tr>
+        <tr><th>Money/sec</th><td>128.57$</td></tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
